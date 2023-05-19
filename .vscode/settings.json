@@ -1,0 +1,12 @@
+{
+	"glsl-canvas.textures": {
+		"0": "./textures/goomba.png",
+		"7": "./textures/ink.png",
+		"1": "./textures/SimpleMap_Borders.png",
+		"2": "./textures/SimpleMap_Colors.png",
+		"3": "./textures/color.jpg",
+		"4": "./textures/m2.png",
+		"5": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-1.png",
+		"6": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-2.jpg"
+	}
+}
