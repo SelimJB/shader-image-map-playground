@@ -1,3 +1,5 @@
+Boilerplate project with a set of tools to quickly draft shaders and produce assets for shaders
+
 # Shaders
 
 ### How ?  
@@ -30,4 +32,35 @@
 - Distance functions
 
 
-# OpenCV
+# Image Processing
+
+Using OpenCV to produce assets for shaders
+
+## Concepts
+-   Skeletonisation
+-   Edge detection
+-   Line thinning
+-   Noise reduction
+-   Morphological operations :
+    -   Erosion
+    -   Dilatation
+    -   Opening
+    -   Closing
+-   Connected Component Analysis: (on the skeletonized image), will label each separate area of the background (including the holes) with a different number.
+    -   Labeling
+    -   Filtering
+    -   Count holes
+    -   Fill holes
+
+## Setup
+
+### Extensions
+-   Python v2023.6.1 -> provided the intallations for Pylance and Jupitar
+-   Python Image Preview
+
+### Libs
+-   pip install opencv-python
+-   pip install Pillow
+-   pip install matplotlib
+-   pip install scikit-image
+
