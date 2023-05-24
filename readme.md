@@ -1,4 +1,4 @@
-Boilerplate project with a set of tools to quickly draft shaders and produce assets for shaders
+Boilerplate project with a set of tools to quickly draft fragment shaders and produce assets for shaders
 
 # Shaders
 
