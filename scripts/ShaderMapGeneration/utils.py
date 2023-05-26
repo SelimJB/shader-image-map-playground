@@ -1,6 +1,10 @@
+import json
+import os
 import random
 from IPython.display import display
 from PIL import Image
+import cv2
+import numpy as np
 
 
 def show(img):
@@ -8,16 +12,9 @@ def show(img):
     display(pilImage)
 
 
-q = 10  # quantization
-offset = 5
-range = 255 - q - offset
-
-
-def getQuantizedColor(i):
-    r = range - int(i / (range/q))*q
-    g = range - (i*q) % range
-    b = q
-    return (r, g, b)
+def saveCVImage(path, fileName, img, code=cv2.COLOR_BGR2RGBA):
+    cv2.imwrite(os.path.join(path, fileName),
+                cv2.cvtColor(img, cv2.COLOR_BGR2RGBA))
 
 
 def getHexRandomColor(i):
@@ -78,46 +75,12 @@ def generateRandomName():
     return random_name
 
 
-QUANTIZATION_PRECISENESS = 15
-QUANTIZATION_LEVEL_COUNT = 17
+def saveBinaryImage(path, image):
+    cv2.imwrite(path, (image * 255).astype(np.uint8))
 
 
-def getQuantizedValue(color):
-    r = color[0]
-    g = color[1]
-    b = color[2]
-    r = int(r / QUANTIZATION_PRECISENESS)
-    g = int(g / QUANTIZATION_PRECISENESS)
-    b = int(b / QUANTIZATION_PRECISENESS)
-
-    if r == 0 or g == 0 or g == QUANTIZATION_LEVEL_COUNT or b != 1:
-        return 0
-
-    quantization = g + (QUANTIZATION_LEVEL_COUNT - r) * 100
-
-    return quantization
-
-
-class ProvinceDataView:
-    def __init__(self, name, color, id, hash, fixed_position):
-        self.name = name
-        self.color = color
-        self.id = id
-        self.hash = hash
-        self.fixed_position = fixed_position
-
-
-def convertProvinceDataViewArrayToJson(my_objects):
-    # Print keys and values
-    # for obj in my_objects:
-    #     print(obj)
-    return [
-        {
-            "name": obj.name,
-            "color": obj.color,
-            "id": obj.id,
-            "hash": obj.hash,
-            "fixedPosition": obj.fixed_position
-        }
-        for obj in my_objects
-    ]
+def writeJson(data, outputPath, projectName):
+    json_data = json.dumps(data,   indent=4)
+    jsonPath = os.path.join(outputPath, projectName + '.json')
+    with open(jsonPath, 'w') as file:
+        file.write(json_data)
