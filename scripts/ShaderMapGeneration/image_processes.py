@@ -95,6 +95,16 @@ def fillContours(skeletonImg, contoursImg, points, display=False):
         show(copy)
 
 
+# A gaussian blur can be used to smooth the image and improve the skeletonization process
+# The kernel size must be positive and odd
+# The image is normalized between 0-1 to be given to the skeletonization function
+def gaussianBlur(img, kernel=(5, 5), display=False):
+    res = cv2.GaussianBlur(img, kernel, 0)
+    if display:
+        show(res)
+    return res / 255
+
+
 # Need a 0-1 array -> bool array
 def skeletonize(grayNormalizedImg, sensitivity, display=False, shouldInvert=True):
     binary_image = grayNormalizedImg > sensitivity
