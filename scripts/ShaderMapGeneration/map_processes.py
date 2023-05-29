@@ -21,14 +21,10 @@ def doMapQuantization(skeleton, points, display=False, debug=False):
     mapColor = cv2.cvtColor(skeleton_uint8, cv2.COLOR_GRAY2BGR)
     provinceDataViews = [ProvinceDataView(
         "", "#000000", 0, 0, {"x": 0, "y": 0})]
-    shiftedPoints = points[1:]  # points are shifted by 1
 
     for j, point in enumerate(points):
-        if (j == len(points)-1):
-            x, y = 0, 0
-        else:
-            x, y = shiftedPoints[j][0]
-        index = j+1
+        x, y = points[j][0]
+        index = j
         color = getQuantizedColor(index)
         provinceDataView = ProvinceDataView(ut.generateRandomName(
         ), ut.getHexRandomColor(index), index, getQuantizedValue(color), {"x": int(x), "y": int(y)})
@@ -37,14 +33,15 @@ def doMapQuantization(skeleton, points, display=False, debug=False):
         cv2.floodFill(mapColor, None, (x, y), color)
 
     mapDebug = None
+    # shiftedPoints = points[1:]
     if debug:
         mapDebug = mapColor.copy()
         for j, point in enumerate(points):
             if (j == len(points)-1):
                 x, y = 0, 0
             else:
-                x, y = shiftedPoints[j][0]
-            index = j+1
+                x, y = points[j][0]
+            index = j
             cv2.putText(mapDebug, str(index), (x-30, y+30),
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3)
         ut.show(mapDebug)
