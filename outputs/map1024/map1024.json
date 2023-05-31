@@ -1,0 +1,513 @@
+{
+    "key": "map1024",
+    "name": "map1024",
+    "route": "map1024",
+    "description": "The conquest map",
+    "initializationUniforms": {
+        "uGlowRadius": 0.016,
+        "uGlowPulsationRadius": 0.004,
+        "uGlowPulsationPeriod": 4.5,
+        "uMouseIlluminationRadius": 0.19
+    },
+    "quantizationPrecision": 10,
+    "textureScale": 1,
+    "sceneSize": {
+        "width": 2048,
+        "height": 2048
+    },
+    "useFixedPosition": true,
+    "mapViewTextures": {
+        "map": {
+            "key": "Map",
+            "url": "game/conquest/map/map1024/input.png"
+        },
+        "bitmap": {
+            "key": "Bitmap",
+            "url": "game/conquest/map/map1024/map_colors.png"
+        },
+        "mapBorders": {
+            "key": "MapBorders",
+            "url": "game/conquest/map/map1024/map_borders.png"
+        },
+        "mapGlow": {
+            "key": "MapGlow",
+            "url": "game/conquest/map/map1024/map_glow.png"
+        },
+        "debugMap": {
+            "key": "DebugMap",
+            "url": "game/conquest/map/map1024/map_debug.png"
+        }
+    },
+    "provinces": [
+        {
+            "name": "",
+            "color": "#000000",
+            "id": 0,
+            "hash": 0,
+            "fixedPosition": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "name": "Sage-Sera",
+            "color": "#94B0E0",
+            "id": 1,
+            "hash": 223,
+            "fixedPosition": {
+                "x": 297,
+                "y": 929
+            }
+        },
+        {
+            "name": "Ripe-Sera",
+            "color": "#FDE79D",
+            "id": 2,
+            "hash": 222,
+            "fixedPosition": {
+                "x": 402,
+                "y": 922
+            }
+        },
+        {
+            "name": "Fine-Oria",
+            "color": "#A6E0E7",
+            "id": 3,
+            "hash": 221,
+            "fixedPosition": {
+                "x": 125,
+                "y": 913
+            }
+        },
+        {
+            "name": "Tate-Dara",
+            "color": "#E6A5F1",
+            "id": 4,
+            "hash": 220,
+            "fixedPosition": {
+                "x": 927,
+                "y": 909
+            }
+        },
+        {
+            "name": "Kai-Pira",
+            "color": "#D2A2F6",
+            "id": 5,
+            "hash": 219,
+            "fixedPosition": {
+                "x": 849,
+                "y": 813
+            }
+        },
+        {
+            "name": "Kai-Elba",
+            "color": "#A1D9B9",
+            "id": 6,
+            "hash": 218,
+            "fixedPosition": {
+                "x": 18,
+                "y": 768
+            }
+        },
+        {
+            "name": "Storm-Yara",
+            "color": "#F6A2AC",
+            "id": 7,
+            "hash": 217,
+            "fixedPosition": {
+                "x": 884,
+                "y": 728
+            }
+        },
+        {
+            "name": "Nifty-Idra",
+            "color": "#A7DAA2",
+            "id": 8,
+            "hash": 216,
+            "fixedPosition": {
+                "x": 512,
+                "y": 611
+            }
+        },
+        {
+            "name": "Jade-Peta",
+            "color": "#8BA9E6",
+            "id": 9,
+            "hash": 215,
+            "fixedPosition": {
+                "x": 940,
+                "y": 581
+            }
+        },
+        {
+            "name": "Merry-Jara",
+            "color": "#FCF0A1",
+            "id": 10,
+            "hash": 214,
+            "fixedPosition": {
+                "x": 935,
+                "y": 579
+            }
+        },
+        {
+            "name": "Plum-Zara",
+            "color": "#F4B0A7",
+            "id": 11,
+            "hash": 213,
+            "fixedPosition": {
+                "x": 0,
+                "y": 569
+            }
+        },
+        {
+            "name": "Jinx-Wela",
+            "color": "#FAC8D9",
+            "id": 12,
+            "hash": 212,
+            "fixedPosition": {
+                "x": 877,
+                "y": 545
+            }
+        },
+        {
+            "name": "Axel-Zara",
+            "color": "#C6D8F5",
+            "id": 13,
+            "hash": 211,
+            "fixedPosition": {
+                "x": 891,
+                "y": 535
+            }
+        },
+        {
+            "name": "Skye-Jeta",
+            "color": "#FFF1C9",
+            "id": 14,
+            "hash": 210,
+            "fixedPosition": {
+                "x": 883,
+                "y": 533
+            }
+        },
+        {
+            "name": "Skye-Ceta",
+            "color": "#D7F1D4",
+            "id": 15,
+            "hash": 209,
+            "fixedPosition": {
+                "x": 877,
+                "y": 532
+            }
+        },
+        {
+            "name": "Slick-Kala",
+            "color": "#F2D9EB",
+            "id": 16,
+            "hash": 208,
+            "fixedPosition": {
+                "x": 878,
+                "y": 520
+            }
+        },
+        {
+            "name": "Pearl-Elba",
+            "color": "#F6A2AC",
+            "id": 17,
+            "hash": 207,
+            "fixedPosition": {
+                "x": 5,
+                "y": 513
+            }
+        },
+        {
+            "name": "Dusk-Elda",
+            "color": "#94B0E0",
+            "id": 18,
+            "hash": 206,
+            "fixedPosition": {
+                "x": 395,
+                "y": 497
+            }
+        },
+        {
+            "name": "River-Wela",
+            "color": "#FDE79D",
+            "id": 19,
+            "hash": 205,
+            "fixedPosition": {
+                "x": 812,
+                "y": 490
+            }
+        },
+        {
+            "name": "Bright-Xena",
+            "color": "#F6A2AC",
+            "id": 20,
+            "hash": 204,
+            "fixedPosition": {
+                "x": 997,
+                "y": 408
+            }
+        },
+        {
+            "name": "Axel-Dara",
+            "color": "#94B0E0",
+            "id": 21,
+            "hash": 203,
+            "fixedPosition": {
+                "x": 527,
+                "y": 404
+            }
+        },
+        {
+            "name": "Glad-Neva",
+            "color": "#FDE79D",
+            "id": 22,
+            "hash": 202,
+            "fixedPosition": {
+                "x": 758,
+                "y": 377
+            }
+        },
+        {
+            "name": "Nifty-Rada",
+            "color": "#A6E0E7",
+            "id": 23,
+            "hash": 201,
+            "fixedPosition": {
+                "x": 1023,
+                "y": 349
+            }
+        },
+        {
+            "name": "Neo-Gala",
+            "color": "#E6A5F1",
+            "id": 24,
+            "hash": 324,
+            "fixedPosition": {
+                "x": 935,
+                "y": 337
+            }
+        },
+        {
+            "name": "Lucy-Xena",
+            "color": "#D2A2F6",
+            "id": 25,
+            "hash": 323,
+            "fixedPosition": {
+                "x": 178,
+                "y": 294
+            }
+        },
+        {
+            "name": "Tall-Vera",
+            "color": "#A1D9B9",
+            "id": 26,
+            "hash": 322,
+            "fixedPosition": {
+                "x": 712,
+                "y": 278
+            }
+        },
+        {
+            "name": "Misty-Fita",
+            "color": "#F6A2AC",
+            "id": 27,
+            "hash": 321,
+            "fixedPosition": {
+                "x": 220,
+                "y": 278
+            }
+        },
+        {
+            "name": "Brave-Qila",
+            "color": "#A7DAA2",
+            "id": 28,
+            "hash": 320,
+            "fixedPosition": {
+                "x": 0,
+                "y": 249
+            }
+        },
+        {
+            "name": "Bright-Tesa",
+            "color": "#8BA9E6",
+            "id": 29,
+            "hash": 319,
+            "fixedPosition": {
+                "x": 552,
+                "y": 224
+            }
+        },
+        {
+            "name": "Free-Lena",
+            "color": "#FCF0A1",
+            "id": 30,
+            "hash": 318,
+            "fixedPosition": {
+                "x": 969,
+                "y": 206
+            }
+        },
+        {
+            "name": "Jinx-Nora",
+            "color": "#F4B0A7",
+            "id": 31,
+            "hash": 317,
+            "fixedPosition": {
+                "x": 325,
+                "y": 186
+            }
+        },
+        {
+            "name": "River-Risa",
+            "color": "#FAC8D9",
+            "id": 32,
+            "hash": 316,
+            "fixedPosition": {
+                "x": 848,
+                "y": 157
+            }
+        },
+        {
+            "name": "Skye-Tara",
+            "color": "#C6D8F5",
+            "id": 33,
+            "hash": 315,
+            "fixedPosition": {
+                "x": 994,
+                "y": 119
+            }
+        },
+        {
+            "name": "Jade-Jeta",
+            "color": "#FFF1C9",
+            "id": 34,
+            "hash": 314,
+            "fixedPosition": {
+                "x": 305,
+                "y": 116
+            }
+        },
+        {
+            "name": "Misty-Kora",
+            "color": "#D7F1D4",
+            "id": 35,
+            "hash": 313,
+            "fixedPosition": {
+                "x": 303,
+                "y": 111
+            }
+        },
+        {
+            "name": "Bright-Gita",
+            "color": "#F2D9EB",
+            "id": 36,
+            "hash": 312,
+            "fixedPosition": {
+                "x": 281,
+                "y": 70
+            }
+        },
+        {
+            "name": "Fancy-Gala",
+            "color": "#F6A2AC",
+            "id": 37,
+            "hash": 311,
+            "fixedPosition": {
+                "x": 699,
+                "y": 32
+            }
+        },
+        {
+            "name": "Jade-Oria",
+            "color": "#94B0E0",
+            "id": 38,
+            "hash": 310,
+            "fixedPosition": {
+                "x": 744,
+                "y": 27
+            }
+        },
+        {
+            "name": "Fancy-Hela",
+            "color": "#FDE79D",
+            "id": 39,
+            "hash": 309,
+            "fixedPosition": {
+                "x": 870,
+                "y": 0
+            }
+        },
+        {
+            "name": "Ava-Gita",
+            "color": "#F6A2AC",
+            "id": 40,
+            "hash": 308,
+            "fixedPosition": {
+                "x": 844,
+                "y": 0
+            }
+        },
+        {
+            "name": "Keen-Kora",
+            "color": "#94B0E0",
+            "id": 41,
+            "hash": 307,
+            "fixedPosition": {
+                "x": 646,
+                "y": 0
+            }
+        },
+        {
+            "name": "Lily-Yona",
+            "color": "#FDE79D",
+            "id": 42,
+            "hash": 306,
+            "fixedPosition": {
+                "x": 542,
+                "y": 0
+            }
+        },
+        {
+            "name": "Dusk-Yara",
+            "color": "#A6E0E7",
+            "id": 43,
+            "hash": 305,
+            "fixedPosition": {
+                "x": 398,
+                "y": 0
+            }
+        },
+        {
+            "name": "Jinx-Mira",
+            "color": "#E6A5F1",
+            "id": 44,
+            "hash": 304,
+            "fixedPosition": {
+                "x": 230,
+                "y": 0
+            }
+        },
+        {
+            "name": "Sage-Tara",
+            "color": "#D2A2F6",
+            "id": 45,
+            "hash": 303,
+            "fixedPosition": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "name": "Fancy-Bora",
+            "color": "#A1D9B9",
+            "id": 46,
+            "hash": 302,
+            "fixedPosition": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    ]
+}
