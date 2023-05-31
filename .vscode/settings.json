@@ -1,12 +1,26 @@
 {
 	"glsl-canvas.textures": {
-		"0": "./textures/goomba.png",
-		"7": "./textures/ink.png",
-		"1": "./textures/SimpleMap_Borders.png",
-		"2": "./textures/SimpleMap_Colors.png",
-		"3": "./textures/color.jpg",
-		"4": "./textures/m2.png",
+		"0": "./textures/random/goomba.png",
+		"1": "./textures/random/SimpleMap_Borders.png",
+		"2": "./textures/random/SimpleMap_Colors.png",
+		"3": "./textures/random/color.jpg",
 		"5": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-1.png",
-		"6": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-2.jpg"
-	}
+		"6": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-2.jpg",
+		"10": "./outputs/map1024/input.png",
+		"11": "./outputs/map1024/map_colors.png",
+		"12": "./outputs/map1024/map_borders.png",
+		"13": "./outputs/map1024/map_glow.png",
+		"20": "./outputs/map512/input.png",
+		"21": "./outputs/map512/map_colors.png",
+		"22": "./outputs/map512/map_borders.png",
+		"23": "./outputs/map512/map_glow.png",
+		"30": "./outputs/tworivers/map.png",
+		"31": "./outputs/tworivers/map_colors.png",
+		"32": "./outputs/tworivers/map_borders.png",
+		"33": "./outputs/tworivers/map_glow.png",
+	},
+	"glsl-canvas.extensions": [
+		"GL_GOOGLE_include_directive",
+		"EXT_shader_texture_lod"
+	]
 }
