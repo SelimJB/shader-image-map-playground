@@ -1,4 +1,5 @@
-Boilerplate project with a set of tools to quickly draft fragment shaders and produce assets for shaders
+Boilerplate project with a set of tools to quickly draft fragment shaders and produce assets for shaders.  
+ It serves a dual purpose: first, to offer an accessible playground for developers - including those unfamiliar with shader programming - who can fork the project and start experimenting; and second, to support creative exploration of map shader creation, with tools and examples that include OpenCV-based image processing for generating custom visual inputs.
 
 # Shaders
 
@@ -29,7 +30,6 @@ They are located in the `./shaders` folder. The purpose is to be able to do quic
 
 
 
-
 # Image Processing
 
 Using OpenCV to produce assets for shaders
@@ -53,7 +53,7 @@ Using OpenCV to produce assets for shaders
 ## Setup
 
 ### Extensions
--   Python v2023.6.1 -> provided the intallations for Pylance and Jupitar
+-   Python v2023.6.1 -> provided the installations for Pylance and Jupyter
 -   Python Image Preview
 
 ### Libs
@@ -62,7 +62,7 @@ Using OpenCV to produce assets for shaders
 -   pip install matplotlib
 -   pip install scikit-image
 
-## ShaderMapGeneration
+## Shader Map Generation
 
 `./scripts/shader_map_generation` : set of notebooks and basic image operations to produce shader assets. 
 
@@ -70,18 +70,18 @@ The process is different for each images. `map_image_processing_template.ipynb` 
 
 **Example** 
 
-From :
+We can achieve this effect:
+
+![image-20230531111708819](./doc/assets/effect.gif)
+
+Using only this image:
 
 ![image-20230531111542957](./doc/assets/image-20230531111542957.png)
 
-We can obtain :
+By generating these assets using OpenCV:
 
 ![image-20230531111633923](./doc/assets/image-20230531111633923.png)
 ![image-20230531111555960](./doc/assets/image-20230531111555960.png)
 ![image-20230531111607607](./doc/assets/image-20230531111607607.png)
 ![image-20230531111619209](./doc/assets/image-20230531111619209.png)
 ![image-20230531111708819](./doc/assets/image-20230531112547638.png)
-
-With which we can achieve these effect :
-
-![image-20230531111708819](./doc/assets/effect.gif)
